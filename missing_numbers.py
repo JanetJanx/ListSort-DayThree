@@ -1,14 +1,14 @@
-def missing_number(b):
-    if b:
-        first_list = [*range(b[0], b[-1]+1)]
-        
-        new_b = set(b)
-        
-        return (list(new_b ^ set(first_list)))
+#function that finds the missing numbers in the sequence
+def missing_number(sequence):
+    if len(sequence) != 0:
+        first_list = [*range(sequence[0], sequence[-1]+1)]
+            
+        #filter duplicates in sequence
+        new_sequence = set(sequence)
+            
+        return (list(new_sequence ^ set(first_list)))
     
-    return "Empty List"
+    return sequence
 
 print (missing_number([10,14,20]))
 print (missing_number([]))
-   
-
