@@ -10,15 +10,16 @@ def list_sort(a):
         char_list = []
         evens_list = [] 
         odds_list = []
+
         for x in a:
-            if isinstance(x, str):
+            if isinstance(x, str) and x is not False and x is not True:
                 char_list.append(x)    
-            elif x % 2 == 1:
+            elif x % 2 == 1 and x is not False and x is not True:
                 evens_list.append(x)  
-            elif x % 2 == 0:
+            elif x % 2 == 0 and x is not False and x is not True:
                 odds_list.append(x)
             else:
-                return False
+                return "List contains boolean values"
 
         sorted_dictionary[word_cat[2]] = char_list
         char_list.sort()
