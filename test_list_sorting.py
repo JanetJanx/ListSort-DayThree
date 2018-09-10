@@ -16,7 +16,7 @@ class ListTest(unittest.TestCase):
         self.assertEqual(list_sort([]), {'evens': [], 'odds': [], 'chars': []})
 
     def test_list_sort_with_boolean_items(self):
-        self.assertEqual(list_sort([4,9,7,8,False,True,'d','g','!']), "List contains boolean values")
+        self.assertEqual(list_sort([4,9,7,8,False,True,'d','g','!']), {'evens': [4, 8], 'odds': [7, 9], 'chars': ['!', 'd', 'g']})
     
     def test_list_sort_with_non_lists(self):
         self.assertEqual(list_sort(2), "Not a List")
