@@ -1,7 +1,7 @@
 #import test library
 import unittest
 #import list function from list sorting file for testing
-from list_sorting import list_sort
+from app.list_sorting import list_sort
 
 class ListTest(unittest.TestCase):
 
