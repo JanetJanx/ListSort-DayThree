@@ -1,7 +1,7 @@
 #import test library
 import unittest
 #import list function from list sorting file for testing
-from missing_numbers import missing_number
+from app.missing_numbers import missing_number
 
 class TestMissingNumber(unittest.TestCase):
 

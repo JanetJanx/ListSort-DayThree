@@ -5,7 +5,7 @@ def missing_number(sequence):
         #first sort the submitted list
         sequence = sorted(sequence)
         
-        first_list = [*range(sequence[0], sequence[-1]+1)]
+        first_list = range(sequence[0], sequence[-1]+1)
             
         #filter duplicates in sequence
         new_sequence = set(sequence)
